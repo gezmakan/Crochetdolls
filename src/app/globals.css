@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --wool: #F6F1E7;
+  --wool-deep: #ECE3D2;
+  --ink: #241F1A;
+  --green: #2E4435;
+  --green-soft: #3C5946;
+  --rose: #C8765E;
+  --rose-soft: #E0A290;
+  --line: #D8CDB8;
+  --muted: #6E6557;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--wool);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
