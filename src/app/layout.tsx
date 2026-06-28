@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter, Spline_Sans_Mono } from "next/font/google";
+import { Playfair_Display, Nunito, DM_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
-const fraunces = Fraunces({
+const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-fraunces",
-  axes: ["opsz"],
+  weight: ["400", "500", "600"],
 });
 
-const splineSansMono = Spline_Sans_Mono({
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600"],
+});
+
+const dmMono = DM_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
   weight: ["400", "500"],
@@ -29,7 +30,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${fraunces.variable} ${splineSansMono.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${nunito.variable} ${dmMono.variable}`}>
       <body style={{ fontFamily: "var(--font-inter), sans-serif" }}>{children}</body>
     </html>
   );
