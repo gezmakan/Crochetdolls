@@ -29,7 +29,7 @@ export default function TrustBar() {
             key={item}
             style={{ display: "flex", alignItems: "center", gap: ".6rem", fontSize: ".92rem" }}
           >
-            <span style={{ color: "var(--rose)", fontWeight: 600 }}>✓</span>
+            <span style={{ color: "var(--logo-green)", fontWeight: 600 }}>✓</span>
             {item}
           </div>
         ))}

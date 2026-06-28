@@ -91,7 +91,7 @@ export default function RangeSection() {
                   }}
                 >
                   Retail {p.retail} ·{" "}
-                  <b style={{ color: "var(--green)" }}>Trade {p.trade}</b>
+                  <b style={{ color: "var(--logo-green)" }}>Trade {p.trade}</b>
                 </div>
               </div>
             </div>

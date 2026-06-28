@@ -19,7 +19,7 @@ export default function ApplySection() {
   return (
     <section
       id="apply"
-      style={{ background: "var(--green)", color: "var(--wool)" }}
+      style={{ background: "var(--logo-green)", color: "#fff" }}
     >
       <div
         className="apply-grid"
@@ -108,7 +108,7 @@ export default function ApplySection() {
                 <h3
                   style={{
                     fontFamily: "var(--font-fraunces), serif",
-                    color: "var(--green)",
+                    color: "var(--logo-green)",
                     fontSize: "1.5rem",
                     marginBottom: 10,
                   }}
@@ -157,8 +157,8 @@ export default function ApplySection() {
                   type="submit"
                   style={{
                     width: "100%",
-                    background: "var(--green)",
-                    color: "var(--wool)",
+                    background: "var(--logo-green)",
+                    color: "#fff",
                     border: 0,
                     padding: ".95rem",
                     borderRadius: 999,
@@ -169,8 +169,8 @@ export default function ApplySection() {
                     marginTop: 6,
                     transition: "background .2s",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.background = "var(--green-soft)")}
-                  onMouseLeave={(e) => (e.currentTarget.style.background = "var(--green)")}
+                  onMouseEnter={(e) => (e.currentTarget.style.background = "var(--logo-green-dark)")}
+                  onMouseLeave={(e) => (e.currentTarget.style.background = "var(--logo-green)")}
                 >
                   Send application
                 </button>
@@ -202,7 +202,7 @@ export default function ApplySection() {
         }
         input:focus, select:focus, textarea:focus {
           outline: none;
-          border-color: var(--green) !important;
+          border-color: var(--logo-green) !important;
           box-shadow: 0 0 0 3px rgba(46,68,53,.12);
         }
       `}</style>

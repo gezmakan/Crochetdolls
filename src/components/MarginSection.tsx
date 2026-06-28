@@ -38,7 +38,7 @@ export default function MarginSection() {
           }}
         >
           {/* Numbers panel */}
-          <div style={{ padding: 42, background: "var(--green)", color: "var(--wool)" }}>
+          <div style={{ padding: 42, background: "var(--logo-green)", color: "#fff" }}>
             {[
               { label: "Retail price (what shoppers pay)", value: "€60" },
               { label: "Your trade cost", value: "€30" },
@@ -91,7 +91,7 @@ export default function MarginSection() {
             </h3>
             <p style={{ color: "var(--muted)" }}>
               Price it at our retail figure and you make{" "}
-              <span style={{ color: "var(--green)", fontWeight: 600 }}>
+              <span style={{ color: "var(--logo-green)", fontWeight: 600 }}>
                 €30 on a €30 cost
               </span>
               . Sell 10 bunnies from a single shelf and that&apos;s €300 back. No

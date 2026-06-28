@@ -32,6 +32,7 @@ export default function Hero() {
               letterSpacing: "-0.01em",
               fontSize: "clamp(2.6rem, 5.2vw, 4.1rem)",
               marginTop: 22,
+              color: "var(--logo-green)",
             }}
           >
             Stock crochet that{" "}
@@ -72,7 +73,7 @@ export default function Hero() {
                   style={{
                     fontFamily: "var(--font-fraunces), serif",
                     fontSize: "1.9rem",
-                    color: "var(--green)",
+                    color: "var(--logo-green)",
                     lineHeight: 1,
                   }}
                 >
@@ -157,12 +158,12 @@ export default function Hero() {
           padding: .82rem 1.5rem;
           font-size: .98rem;
           display: inline-block;
-          background: var(--green);
-          color: var(--wool);
-          box-shadow: 0 8px 20px -10px rgba(46,68,53,.7);
+          background: var(--logo-green);
+          color: #fff;
+          box-shadow: 0 8px 20px -10px rgba(122,179,136,.5);
           transition: background .2s, transform .15s;
         }
-        .btn-primary:hover { background: var(--green-soft); transform: translateY(-1px); }
+        .btn-primary:hover { background: var(--logo-green-dark); transform: translateY(-1px); }
         .btn-ghost {
           text-decoration: none;
           font-weight: 500;

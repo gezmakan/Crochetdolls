@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Navbar() {
   return (
     <header
@@ -7,7 +9,7 @@ export default function Navbar() {
         position: "sticky",
         top: 0,
         zIndex: 50,
-        background: "rgba(246,241,231,.86)",
+        background: "rgba(255,255,255,.92)",
         backdropFilter: "blur(8px)",
         borderBottom: "1px solid var(--line)",
       }}
@@ -23,22 +25,19 @@ export default function Navbar() {
           height: 64,
         }}
       >
-        <div
-          style={{
-            fontFamily: "var(--font-fraunces), serif",
-            fontSize: "1.18rem",
-            fontWeight: 600,
-            letterSpacing: "-0.01em",
-            color: "var(--green)",
-          }}
-        >
-          The Crochet Dolls <span style={{ color: "var(--rose)" }}>·</span> Trade
-        </div>
+        <Image
+          src="https://thecrochetdolls.com/cdn/shop/files/thecrochetdolls-logo_transparent.png?v=1762355191&width=3840"
+          alt="The Crochet Dolls"
+          width={160}
+          height={48}
+          style={{ objectFit: "contain", objectPosition: "left" }}
+          priority
+        />
         <a
           href="#apply"
           style={{
-            background: "var(--green)",
-            color: "var(--wool)",
+            background: "var(--logo-green)",
+            color: "#fff",
             textDecoration: "none",
             padding: ".62rem 1.15rem",
             borderRadius: 999,
@@ -46,8 +45,8 @@ export default function Navbar() {
             fontWeight: 500,
             transition: "background .2s",
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = "var(--green-soft)")}
-          onMouseLeave={(e) => (e.currentTarget.style.background = "var(--green)")}
+          onMouseEnter={(e) => (e.currentTarget.style.background = "var(--logo-green-dark)")}
+          onMouseLeave={(e) => (e.currentTarget.style.background = "var(--logo-green)")}
         >
           Open a trade account
         </a>
