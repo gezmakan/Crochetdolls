@@ -35,9 +35,9 @@ export default function Hero() {
               color: "var(--logo-green)",
             }}
           >
-            Stock crochet that{" "}
+            Crochet dolls, teddies and accessories that{" "}
             <em style={{ fontStyle: "italic", color: "var(--rose)" }}>
-              sells itself
+              sell themselves
             </em>{" "}
             off the shelf.
           </h1>
