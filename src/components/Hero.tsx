@@ -131,17 +131,6 @@ export default function Hero() {
             />
             <div>
               <b style={{ fontSize: ".86rem" }}>Handmade, not mass-made</b>
-              <small
-                style={{
-                  display: "block",
-                  color: "var(--muted)",
-                  fontSize: ".72rem",
-                  textTransform: "uppercase",
-                  letterSpacing: ".1em",
-                }}
-              >
-                Stitched in Ireland
-              </small>
             </div>
           </div>
         </div>
